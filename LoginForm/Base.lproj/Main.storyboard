@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginForm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RavaliReddy" translatesAutoresizingMaskIntoConstraints="NO" id="FIE-OE-LAB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NAME" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KfZ-VS-umB" customClass="TextfiledCommonFile" customModule="LoginForm" customModuleProvider="target">
+                                <rect key="frame" x="30" y="145.5" width="354" height="50"/>
+                                <accessibility key="accessibilityConfiguration" label="5">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MMo-bu-esv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQi-FI-K5H">
+                                <rect key="frame" x="30" y="210.5" width="354" height="50"/>
+                                <accessibility key="accessibilityConfiguration" label="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZVU-6x-4oK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCN-o0-wpF">
+                                <rect key="frame" x="30" y="94" width="354" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTB-ND-gtW">
+                                <rect key="frame" x="30" y="423" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vfx-ga-xSY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="wbk-c2-Tc6"/>
+                                </constraints>
+                                <state key="normal" image="login-button"/>
+                                <connections>
+                                    <action selector="btnAceLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRR-Xu-hzU"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aCR-qt-gDv">
+                                <rect key="frame" x="59" y="568" width="296" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="GLy-VE-bxh"/>
+                                    <constraint firstAttribute="width" constant="296" id="g7D-3B-uNX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BQi-FI-K5H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8yR-5d-WzE"/>
+                            <constraint firstItem="aCR-qt-gDv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="IP3-I8-AJu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KfZ-VS-umB" secondAttribute="trailing" constant="30" id="O4A-D6-4pw"/>
+                            <constraint firstItem="VCN-o0-wpF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Q6m-bo-67k"/>
+                            <constraint firstItem="BQi-FI-K5H" firstAttribute="top" secondItem="KfZ-VS-umB" secondAttribute="bottom" constant="15" id="TXy-ma-wZ7"/>
+                            <constraint firstItem="NTB-ND-gtW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xgw-Rb-chp"/>
+                            <constraint firstItem="KfZ-VS-umB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Z6b-HF-Acr"/>
+                            <constraint firstItem="aCR-qt-gDv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cnd-Tf-h5L"/>
+                            <constraint firstItem="VCN-o0-wpF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="dou-Jp-WT6"/>
+                            <constraint firstItem="NTB-ND-gtW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eOY-gb-uz3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FIE-OE-LAB" secondAttribute="bottom" id="fz9-Sw-bPM"/>
+                            <constraint firstItem="FIE-OE-LAB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jm6-KB-5fm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NTB-ND-gtW" secondAttribute="trailing" constant="30" id="ksN-xr-gde"/>
+                            <constraint firstItem="FIE-OE-LAB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pbp-ZJ-Cgc"/>
+                            <constraint firstItem="NTB-ND-gtW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v4n-lr-XDL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BQi-FI-K5H" secondAttribute="trailing" constant="30" id="vOR-7D-YTU"/>
+                            <constraint firstAttribute="trailing" secondItem="VCN-o0-wpF" secondAttribute="trailing" constant="30" id="vRA-v6-If0"/>
+                            <constraint firstItem="KfZ-VS-umB" firstAttribute="top" secondItem="VCN-o0-wpF" secondAttribute="bottom" constant="30" id="z2O-Dh-0Jg"/>
+                            <constraint firstAttribute="trailing" secondItem="FIE-OE-LAB" secondAttribute="trailing" id="zQK-H6-YsV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressImage" destination="aCR-qt-gDv" id="Cr7-A9-Qwu"/>
+                        <outlet property="txfName" destination="KfZ-VS-umB" id="xfq-uv-PrU"/>
+                        <outlet property="txfpassword" destination="BQi-FI-K5H" id="XOX-Vb-6hU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RavaliReddy" width="480" height="640"/>
+        <image name="login-button" width="128" height="70"/>
+    </resources>
+</document>
